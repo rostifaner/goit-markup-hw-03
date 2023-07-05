@@ -65,7 +65,7 @@ body {
 }
 
 .header {
-  padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
@@ -76,6 +76,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-state);
+  margin-right: 76px;
 }
 
 .logo-studio {
@@ -95,12 +96,10 @@ body {
 .menu-list {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
 }
 
-.address-list {
-  display: flex;
-  gap: 40px;
+.header-list {
+  padding: 24px 0;
 }
 
 .menu-item {
@@ -111,6 +110,11 @@ body {
   color: var(--navyblue);
 }
 
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
 .menu-item:hover,
 .menu-item:focus {
   color: var(--secondary-state);
@@ -118,6 +122,8 @@ body {
 
 .address-link {
   font-style: normal;
+  display: flex;
+  align-items: center;
 }
 
 .link-address {
@@ -163,6 +169,7 @@ body {
   display: block;
   padding: 16px 32px;
   margin: 0 auto;
+  min-width: 169px;
 }
 
 .main-button:hover,
@@ -210,6 +217,9 @@ body {
 .results-list {
   display: flex;
   gap: 24px;
+}
+
+.results-list-item {
   width: calc((100% - 48px) / 3);
 }
 
@@ -235,20 +245,20 @@ body {
 .team-list {
   display: flex;
   gap: 24px;
-  width: calc((100% - 72px) / 4);
 }
 
 .team-card {
   background-color: var(--white);
-  border-radius: 4px;
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  width: calc((100% - 72px) / 4);
 }
 
 .team-text {
   text-align: center;
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 
 .cases {
@@ -259,12 +269,8 @@ body {
 .cases-btn-list {
   display: flex;
   margin-bottom: 72px;
-
   gap: 24px;
   justify-content: center;
-}
-
-.cases-btn-item {
 }
 
 .button-filter {
@@ -284,12 +290,17 @@ body {
 .button-filter:focus {
   color: var(--white);
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 
 .thumb-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+}
+
+.thumb-item {
+  width: calc((100% - 48px) / 3);
 }
 
 .thumb-text {
@@ -300,8 +311,7 @@ body {
 
 .footer-section {
   background-color: var(--navyblue);
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -312,8 +322,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-state);
-  display: block;
-  margin-bottom: 17.5px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-studio {
