@@ -98,16 +98,14 @@ body {
   gap: 40px;
 }
 
-.header-list {
-  padding: 24px 0;
-}
-
 .menu-item {
+  display: flex;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navyblue);
+  padding: 24px 0;
 }
 
 .address-list {
