@@ -96,9 +96,6 @@ body {
 .menu-list {
   display: flex;
   gap: 40px;
-}
-
-.header-list {
   padding: 24px 0;
 }
 
